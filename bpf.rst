@@ -79,8 +79,8 @@ Here's an example of joining conditions with a logical AND:
 
     nids:
       bpf:
-        - not host 192.168.1.2 &&
-        - not host 192.168.1.3 &&
+        - "not host 192.168.1.2 &&"
+        - "not host 192.168.1.3 &&"
         - not host 192.168.1.4
       
 Here's an example of joining conditions with a logical OR:
@@ -89,8 +89,8 @@ Here's an example of joining conditions with a logical OR:
 
     nids:
       bpf:
-        - host 192.168.1.2 ||
-        - host 192.168.1.3 ||
+        - "host 192.168.1.2 ||"
+        - "host 192.168.1.3 ||"
         - host 192.168.1.4
 
 VLAN
